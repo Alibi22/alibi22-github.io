@@ -1,0 +1,63 @@
+// main: ../style.less
+
+.default-btn{
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.57rem 2.14rem 0.57rem 1.71rem;
+    border: 1px solid @yellow;
+    border-right-width: 20px;
+    position: relative; 
+    outline: 0;
+    &:after{
+        content: "\f105";
+        font-family:'icomoon';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -0.86rem;
+    } 
+}
+
+.slick-btn{
+    position: absolute;
+    top: 75%;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    background-color: @yellow;
+    cursor: pointer;
+    outline: 0;
+    &:before{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'icomoon';
+        color: #fff;
+    }
+    &:hover{
+        background-color: transparent;
+    }
+}
+.slick-btn.slick-disabled{
+    cursor: default;
+    background-color: transparent;
+}
+.slick-next{
+    right: 0;
+    &:before{
+        content:"\f105"
+    }
+}
+.slick-prev{
+    left: 0;
+    &:before{
+        content:"\f104"
+    }
+}
+

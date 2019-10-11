@@ -1,0 +1,50 @@
+// main: ../style.less
+
+.advantages{
+    padding: 55px 0 40px;
+    background: url(../img/advantages-bg.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 285px;
+}
+.advantages__inner{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    text-align: center;
+}
+.advanteges__items{
+    min-width: 360px;
+    padding: 0 20px;
+}
+.advantages__title{
+    font-size: 18px;
+    line-height: 1.333;
+    font-weight: 500;
+    font-family:'Roboto',sans-serif;
+    padding: 60px 0 15px;
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: 2px solid @yellow;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &:after{
+        content: "\f00c";
+        font-family: 'icomoon';
+        font-size: 14px;
+        position: absolute;
+        top: 12.5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.advantagae__text{
+    line-height: 1.71;
+    color: #D3D2D2;
+    letter-spacing: 0.1px;
+}

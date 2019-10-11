@@ -1,0 +1,113 @@
+// main: ../style.less
+
+.services{
+    padding: 3.57rem 0 2.14rem;
+}
+.services__top, .news__top{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4.28rem;
+}
+.services__title-box, .form__title-box, .news__title-box{
+    position: relative;
+    max-width: 520px;
+    padding-left: 140px;
+    &:before{
+        content: "";
+        position: absolute;
+        width: 106px;
+        height: 2px;
+        background-color: @yellow;
+        left: 0;
+        top: 1rem;
+    }
+}
+.services__title, .form__title, .news__title{
+    font-size: 1.72rem;
+    font-weight: 500;
+    color: @dark-black;
+    font-family:'Roboto',sans-serif;
+    margin-bottom: 1.4rem;
+}
+.services__text, .form__text, .news_text{
+    font-size: 1rem;
+    line-height: 1.29;
+    letter-spacing: 0.1px;
+    font-weight: 400;
+    color: @gray;
+    font-family:'Roboto',sans-serif;
+}
+.services__btn a, .news__btn a{
+    font-size: 1rem;
+    letter-spacing: 0.25px;
+    line-height: 1.72;
+    color: #373636;
+    padding: 0.57rem 2.86rem;
+    border: 3px solid #E6E6E6;
+}
+.services__items{
+    display: flex;
+    justify-content: space-between;
+
+}
+.services__item{
+    max-width: 360px;
+    padding: 2.17rem 0 5.71rem;
+    text-align: center;
+    position: relative;
+    min-height: 375px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, .14);
+}
+.services__item-img{
+    display: flex;
+    justify-content: center;
+    min-width: 4.5rem;
+    min-height: 3.86rem;
+    position: relative;
+}
+.services__item-img img{
+   position: absolute;
+   bottom: 0;
+}
+.services__item-title{
+    padding: 1.72rem;
+    font-size: 1.29rem;
+    line-height: 1.72;
+    color: @dark-black;
+}
+.services__item-text{
+    letter-spacing: 0.1px;
+    padding: 0 2.5rem 2.5rem;
+}
+.services__item-btn{
+    position: absolute;
+    bottom: 2.86rem;
+    left: 0;
+    right: 0;
+    & .default-btn{
+        color: #373636;
+        &:after{
+            color: #fff;
+        }
+    }
+}
+.services__item-link{
+    position: relative;
+    color: #050505;
+    font-family:'Roboto',sans-serif;
+    font-size: 1rem;
+    line-height: 1.29;
+    font-weight: 400;
+    margin-right: 4.28rem;
+    // border-bottom: 1px solid #050505;
+    &:after{
+        content: "";
+        position: absolute;
+        width: auto;
+        padding: 0.5px 2.58rem;
+        background-color: #050505;
+        bottom: 0;
+        left: 0;
+    }
+}

@@ -1,0 +1,90 @@
+// main: ../style.less
+
+.footer__content{
+    background-color: #595959;
+    padding: 20px 0 30px;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__info{
+    max-width: 360px;
+}
+
+.footer__title{
+    font-family:'Roboto',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    line-height: 2.25;
+    letter-spacing: 0.5px;
+}
+.footer__text{
+    color: #D3D2D2;
+    margin-bottom: 20px;
+}
+.footer__inner .header__top__btn{
+    float: none;
+    display: inline-block;
+    & span:before{
+        top: -6px;
+    }
+}
+.footer__list{
+    padding-top: 10px;
+}
+.footer__list li{
+    margin-top: 10px;
+}
+.footer__list a{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.25px;
+    color: #fff;
+    font-weight: 400;
+    font-family:'Roboto',sans-serif;
+    padding-left: 33px;
+    position: relative;
+    &:before{
+        content: "\f003";
+        position: absolute;
+        left: 0;
+        color: @yellow;
+        font-family: 'icomoon';
+    }
+}
+.footer__list .footer__phone{
+    &:before{
+        content: "\f095";
+        left: 3px;
+    }
+}    
+.footer__list .footer__address{
+    &:before{
+        content: "\f041";
+        left: 3px;
+    }
+}
+
+.footer__map{
+    padding-top: 10px;
+    max-width: 630px;
+    width: 100%;
+}
+.footer__map iframe{
+    width: 100%;
+}
+
+
+.footer__copy{
+    background-color: #303030;
+    text-align: center;
+    font-size: 12px;
+    line-height: 2;
+    padding: 8px 0;
+    font-weight: 400;
+    font-family:'Roboto',sans-serif;
+    color: #fff;
+}
