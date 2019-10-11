@@ -1,0 +1,75 @@
+// main: ../style.less
+
+.intro{
+    margin-top: 80px;
+}
+
+.intro__inner{
+    display: flex;
+    border-bottom: 1px solid fade(@gray, 30%);
+    padding-top: 6.6rem;
+    padding-bottom: 8rem;
+    background: url("../img/intro/background.png") right bottom no-repeat;
+    background-size: max(510px);
+    position: relative;
+    
+    @media @tablet{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        background-size: max(400px);
+    }
+    @media @mobile{
+        background-size: max(300px);
+    }
+}
+.intro__content{
+    width: 50%;
+    @media @mobile-sm{
+        width: 100%;
+    }
+    @media @mobile{
+        width: 60%;
+    }
+}
+.intro__suptitle{
+    font-size: 2.13rem;
+    color: @black;
+    font-weight: 200;
+    @media @tablet{
+        font-size: 1.5rem;
+    }
+}
+.intro__title{
+    font-size: 3rem;
+    color: @black;
+    font-weight: 700;
+    margin-bottom: 5px;
+    @media @tablet{
+        font-size: 2rem;
+    }
+}
+.intro__text{
+    font-size: 1.2rem;
+    color: fade(@black, 70%);
+    margin-bottom: 25px;
+}
+.intro__photo{
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    z-index: 1;
+    max-height: 492px;
+    height: 100%;
+
+    @media @tablet{
+        width: 350px;
+        height: auto;
+    }
+    @media @mobile{
+        width: 260px;
+    }
+    @media @mobile-sm{
+        display: none;
+    }
+}
+
